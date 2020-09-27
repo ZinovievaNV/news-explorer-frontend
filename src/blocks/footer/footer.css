@@ -1,0 +1,19 @@
+@import "../row/row.css";
+@import "__text/footer__text.css";
+@import "../text/_gray/text_gray.css";
+@import "__list-text/footer__list-text.css";
+@import "__list-icon/footer__list-icon.css";
+@import "__item/footer__item.css";
+@import "__nav/footer__nav.css";
+@import "__link/footer__link.css";
+@import "__icon/footer__icon.css";
+@import "__row/footer__row.css";
+
+.footer {
+  font-family: Roboto,Arial,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  color: #1A1B22;
+}
+

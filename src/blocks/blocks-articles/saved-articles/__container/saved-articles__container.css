@@ -1,0 +1,16 @@
+.saved-articles__container {
+  padding: 46px 104px 56px 104px;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .saved-articles__container {
+    padding: 24px 40px 32px 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .saved-articles__container {
+    padding: 8px 16px 32px 16px;
+  }
+}

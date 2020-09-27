@@ -1,0 +1,16 @@
+.header__list {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  color: #1A1B22;
+  font-size: 1.125em;
+
+}
+
+@media  (max-width: 768px){
+  .header__list {
+    font-size: 1em;
+
+  }
+}

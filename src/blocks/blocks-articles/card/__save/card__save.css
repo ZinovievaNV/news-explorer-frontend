@@ -1,0 +1,23 @@
+.card__save {
+  background: url(../../../../images/bookmark-grey.png) center no-repeat;
+  background-color: #FFFFFF;
+  border: none;
+  width: 40px;
+  border-radius: 8px;
+  height: auto;
+  cursor: pointer;
+}
+.card__save:hover {
+  background: url(../../../../images/bookmark-black.png) center no-repeat;;
+  background-color: #FFFFFF;
+}
+.card__save:active{
+  background: url(../../../../images/bookmark-blue.png) center no-repeat;
+  background-color: #FFFFFF;
+}
+@media (max-width: 320px) {
+  .card__save {
+    display: flex;
+
+  }
+}

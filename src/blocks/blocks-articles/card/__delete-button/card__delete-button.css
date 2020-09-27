@@ -1,0 +1,19 @@
+@import "_active/card__delete-button_active.css";
+
+.card__delete-button {
+  background: url(../../../../images/trash-grey.png) center no-repeat;
+  background-color: #FFFFFF;
+  border: none;
+  max-width: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 40px;
+}
+
+
+
+@media (max-width: 320px) {
+  .card__delete-button {
+    display: none;
+  }
+}

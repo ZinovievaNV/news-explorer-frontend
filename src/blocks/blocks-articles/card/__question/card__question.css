@@ -1,0 +1,22 @@
+.card__question {
+  font-family: Roboto,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.750em;
+  line-height: 30px;
+  margin-right: 5px;
+  box-shadow: 0 10px 22px rgba(59, 74, 116, 0.1);
+  border-radius: 10px;
+  padding: 5px 12px;
+  background: white;
+  margin-left: auto;
+  margin-right: 5px;
+  text-decoration: none;
+  color: #1A1B22;
+  display: none;
+}
+@media (max-width: 900px) {
+  .card__question {
+    display: none;
+  }
+}

@@ -1,0 +1,20 @@
+@import url(__container/wrapper__container.css);
+@import url(__img/wrapper__img.css);
+
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+}
+
+@media  (max-width: 768px){
+  .wrapper {
+    max-width: 768px;
+  }
+}
+@media  (max-width: 320px){
+  .wrapper {
+    max-width: 320px;
+
+  }
+}

@@ -1,0 +1,10 @@
+.footer__link {
+  cursor: pointer;
+  padding: 0 20px;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .footer__link {
+    padding: 0 10px;
+  }
+}

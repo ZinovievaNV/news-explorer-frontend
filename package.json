@@ -1,0 +1,55 @@
+{
+  "name": "diplom-webpack",
+  "version": "0.0.1",
+  "description": "Дипломный проект на тему 'webpack' и 'frontend' в Яндекс.Практикуме.",
+  "main": "./src/js/index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "deploy": "cross-env NODE_ENV=production gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZinovievaNV/news-explorer-frontend.git"
+  },
+  "author": "Zinovieva Natalya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZinovievaNV/news-explorer-frontend/issues"
+  },
+  "homepage": "https://github.com/ZinovievaNV/news-explorer-frontend#readme",
+  "browserslist": [
+    "last 10 versions"
+  ],
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "autoprefixer": "^9.8.0",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.0.1",
+    "core-js": "^3.4.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.3",
+    "cssnano": "^4.1.10",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^6.0.0",
+    "gh-pages": "^2.2.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "image-webpack-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-md5-hash": "0.0.6",
+    "webpack-merge": "^4.2.2"
+  }
+}

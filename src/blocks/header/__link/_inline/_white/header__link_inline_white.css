@@ -1,0 +1,8 @@
+.header__link_inline_white {
+
+}
+
+.header__link_inline_white:hover {
+  border-bottom: 3px solid #FFFFFF;
+  padding-bottom: 26px;
+}

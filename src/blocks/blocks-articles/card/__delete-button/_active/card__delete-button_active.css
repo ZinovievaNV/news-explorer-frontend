@@ -1,0 +1,7 @@
+.card__delete-button_active {
+  background-color: #FFFFFF;
+}
+.card__delete-button_active:active {
+  background: url(../../../../../images/trash.png) center no-repeat;
+  background-color: #FFFFFF;
+}

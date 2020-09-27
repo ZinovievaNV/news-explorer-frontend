@@ -1,0 +1,10 @@
+.searching-results__controls {
+margin: 64px auto 80px;
+  width: fit-content;
+}
+@media (max-width: 320px) {
+  .searching-results__controls {
+ margin-top: 15px;
+    margin-bottom: 32px;
+  }
+}

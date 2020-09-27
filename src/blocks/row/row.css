@@ -1,0 +1,9 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  line-height: 24px;
+  font-style: normal;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px 104px;
+}
