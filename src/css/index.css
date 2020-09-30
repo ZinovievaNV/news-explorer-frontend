@@ -12,6 +12,7 @@
 @import url(../blocks/blocks-main/not-find/not-find.css);
 @import url(../blocks/blocks-main/preloader/preloader.css);
 @import url(../blocks/fill-gray/fill-gray.css);
+@import url(../blocks/button/button.css);
 
 body {
 

@@ -12,6 +12,8 @@
 @import "__controls/card__controls.css";
 @import "__save/card__save.css";
 @import "__link-control/card__link-control.css";
+@import "__ellipsis/card__ellipsis.css";
+@import "__more/card__more.css";
 
 .card {
   background-color: #fff;

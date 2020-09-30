@@ -1,9 +1,5 @@
 .popup__form {
   margin-top: 22px;
-  margin-bottom: 31px;
 }
 
-.popup__form:last-of-type {
-  margin-bottom: 0;
-}
 

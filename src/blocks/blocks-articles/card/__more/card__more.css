@@ -1,0 +1,8 @@
+.card__more {
+
+}
+@media (max-width: 768px) {
+  .card__more {
+    display: none;
+  }
+}

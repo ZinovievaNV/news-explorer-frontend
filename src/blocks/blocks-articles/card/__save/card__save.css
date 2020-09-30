@@ -6,6 +6,7 @@
   border-radius: 8px;
   height: auto;
   cursor: pointer;
+  display: none;
 }
 .card__save:hover {
   background: url(../../../../images/bookmark-black.png) center no-repeat;;

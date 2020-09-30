@@ -1,3 +1,7 @@
+@import "_black/header__row_black.css";{
+
+}
+
 .header__row {
   display: flex;
   justify-content: space-between;
@@ -5,11 +9,17 @@
   font-style: normal;
   flex-direction: row;
   align-items: center;
-  padding: 30px 104px;
+  padding: 19px 104px 13px;
 }
-@media (max-width: 700px) {
-  .header__row {
 
-    padding: 20px 16px;
+@media (max-width: 768px) {
+  .header__row {
+    padding: 14px 40px 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__row {
+    padding: 16px;
   }
 }

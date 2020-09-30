@@ -13,6 +13,7 @@
   height: 64px;
   right: 0;
   border: none;
+  outline: none;
 }
 
 @media (max-width: 768px) {

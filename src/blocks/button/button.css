@@ -1,0 +1,23 @@
+.button{
+  outline: none;
+animation-name: click;
+}
+.button:hover{
+  opacity: .9;
+  background: gray;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  box-shadow: 0 0 5px;
+  transition: background-color .25s ease-out;
+  color: #FFFFFF;
+
+}
+@keyframes click {
+  from {
+    
+  }
+  to {
+
+  }
+}
