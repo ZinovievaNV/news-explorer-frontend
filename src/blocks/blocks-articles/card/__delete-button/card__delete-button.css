@@ -9,11 +9,3 @@
   cursor: pointer;
   width: 40px;
 }
-
-
-
-@media (max-width: 320px) {
-  .card__delete-button {
-    display: none;
-  }
-}

@@ -12,6 +12,7 @@
     grid-gap: 8px 8px;
     grid-template-columns: repeat(auto-fill, 218px);
     padding: 32px 40px;
+    justify-content: space-evenly;
   }
 }
 

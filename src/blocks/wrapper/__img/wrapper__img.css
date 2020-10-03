@@ -1,3 +1,5 @@
 .wrapper__img {
-background-image: url("../../../images/foto-website.jpg") ;
+background: url("../../../images/foto-website.jpg") center no-repeat;
+  width: 100%;
+  height: auto;
 }

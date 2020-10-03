@@ -28,14 +28,26 @@
           </li>
           <li class="header__item">
             <!--header__name будет подставляться имя -->
-            <button class="header__button header__button_black"><span class="header__name">Грета</span><img
+            <button class="button header__button header__button_black"><span class="header__name">Грета</span><img
               src="<%=require('../images/logout.png')%>" alt="иконка входа" class="header__icon">
+<!--              <button class="button header__button header__button_active">Авторизоваться</button>-->
             </button>
           </li>
         </ul>
 
       </nav>
-      <img src="<%=require('../images/menu-min-black.png')%>" alt="меню бургер" class="header__menu">
+      <div class="header__menu-burger">
+        <input class="header__input" type="checkbox"><span class="header__span"></span>
+        <span class="header__span"></span>
+        <ul id="header__menu">
+          <a class="header__link" href="#"><li>Главная</li></a>
+          <a class="header__link" href="#"><li>Сохранённые статьи</li></a>
+          </ul>
+        <li class="header__item">
+          <button class="button header__button header__button_active">Авторизоваться</button>
+        </li>
+      </div>
+<!--      <img src="<%=require('../images/menu-min-black.png')%>" alt="меню бургер" class="header__menu">-->
     </div>
   </header>
   <main>

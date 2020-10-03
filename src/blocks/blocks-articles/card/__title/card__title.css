@@ -5,10 +5,10 @@
   font-style: normal;
   font-weight: normal;
   font-size: 1.625em;
-    line-height: 30px;
+  line-height: 30px;
 }
 
-@media  (max-width: 768px){
+@media  (max-width: 900px){
   .card__title {
     font-size: 1.375em;
     line-height: 24px;

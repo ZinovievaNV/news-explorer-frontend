@@ -1,5 +1,5 @@
 .searching-results__link {
-  background: #FFFFFF;
+  background: rgb(255,255,255);
   border-radius: 80px;
   padding: 18px 84px 22px;
   font-family: Roboto,Arial,sans-serif;
@@ -8,10 +8,11 @@
   font-size: 1.125em;
   line-height: 24px;
   color: #1A1B22;
+
   text-decoration: none;
 }
 .searching-results__link:hover{
-  opacity: 0.9;
+  background: rgba(255,255,255, 0.9);
 }
 @media (max-width: 900px) {
   .searching-results__button {

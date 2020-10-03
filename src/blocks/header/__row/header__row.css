@@ -10,6 +10,7 @@
   flex-direction: row;
   align-items: center;
   padding: 19px 104px 13px;
+
 }
 
 @media (max-width: 768px) {
@@ -21,5 +22,6 @@
 @media (max-width: 320px) {
   .header__row {
     padding: 16px;
+    display: flex;
   }
 }

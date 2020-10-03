@@ -1,23 +1,21 @@
-.button{
+.button {
   outline: none;
-animation-name: click;
+  transition: all .4s ease-in-out;
+  box-sizing: border-box;
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.button:hover{
-  opacity: .9;
-  background: gray;
-  transition-property: opacity;
-  transition-duration: 1s;
-  transition-timing-function: ease;
-  box-shadow: 0 0 5px;
-  transition: background-color .25s ease-out;
-  color: #FFFFFF;
 
+.button:hover {
+  transform: scale(1.1, 1.1);
 }
-@keyframes click {
-  from {
-    
-  }
-  to {
 
+@media (max-width: 320px) {
+  .button {
+    width: 100%;
+    height: 56px;
   }
 }

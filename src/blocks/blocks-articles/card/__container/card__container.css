@@ -9,6 +9,12 @@
 @media (max-width: 900px) {
   .card__container {
    top: 8px;
-    left: 8px;
+    left: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .card__container {
+    top: 16px;
+    left: 16px;
   }
 }
