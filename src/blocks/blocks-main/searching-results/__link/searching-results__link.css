@@ -16,13 +16,12 @@
 }
 @media (max-width: 900px) {
   .searching-results__button {
-    margin-bottom: 40px;
+
     padding: 15px 60px 22px;
   }
 }
 @media (max-width: 320px) {
   .searching-results__button {
-    margin-bottom: 32px;
     width: 100%;
   }
 }

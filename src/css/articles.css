@@ -10,8 +10,8 @@
 @import "../blocks/footer/footer.css";
 @import "../blocks/fill-gray/fill-gray.css";
 @import "../blocks/button/button.css";
-
-
+@import "../blocks/blocks-main/menu-burger/menu-burger.css";
+@import url(../blocks/text/text.css);
 
 
 .body {

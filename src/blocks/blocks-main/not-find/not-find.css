@@ -8,6 +8,7 @@
   background: #F5F6F7;
   width: 100%;
   color: #1A1B22;
+  display: none;
 }
 
 @media (max-width: 768px) {

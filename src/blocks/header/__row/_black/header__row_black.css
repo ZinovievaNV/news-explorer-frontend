@@ -1,5 +1,11 @@
 .header__row_black {
-  background: #1A1B22;
-
+  /*background: #1A1B22;*/
+  display: none;
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 320px) {
+  .header__row_black {
+    display: block;
+  }
 }

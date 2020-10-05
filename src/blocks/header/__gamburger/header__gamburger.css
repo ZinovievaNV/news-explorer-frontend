@@ -1,0 +1,9 @@
+.header__gamburger {
+display: none;
+}
+@media (max-width: 700px) {
+  .header__gamburger{
+    display: block;
+  }
+}
+

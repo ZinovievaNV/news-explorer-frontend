@@ -30,26 +30,37 @@
             <!--header__name будет подставляться имя -->
             <button class="button header__button header__button_black"><span class="header__name">Грета</span><img
               src="<%=require('../images/logout.png')%>" alt="иконка входа" class="header__icon">
-<!--              <button class="button header__button header__button_active">Авторизоваться</button>-->
+
             </button>
           </li>
         </ul>
 
       </nav>
-      <div class="header__menu-burger">
-        <input class="header__input" type="checkbox"><span class="header__span"></span>
-        <span class="header__span"></span>
-        <ul id="header__menu">
-          <a class="header__link" href="#"><li>Главная</li></a>
-          <a class="header__link" href="#"><li>Сохранённые статьи</li></a>
-          </ul>
-        <li class="header__item">
-          <button class="button header__button header__button_active">Авторизоваться</button>
-        </li>
-      </div>
-<!--      <img src="<%=require('../images/menu-min-black.png')%>" alt="меню бургер" class="header__menu">-->
+
+<!--      <div class="header__gamburger">-->
+<!--        <span class="header__span header__span_black"></span>-->
+<!--        <span class="header__span header__span_black"></span>-->
+<!--      </div>-->
+
+      <img src="<%=require('../images/menu-min-black.png')%>" alt="меню бургер" class="header__gamburger">
     </div>
   </header>
+  <section class="menu-burger">
+    <div class="menu-burger__background"> </div>
+    <div class="menu-burger__container">
+      <ul class="menu-burger__list">
+
+          <li class="menu-burger__item"><a class="menu-burger__link text_white" href="#">Главная</a></li>
+
+
+          <li><a class="menu-burger__link text_white" href="#">Сохранённые статьи</a></li>
+        <li class="menu-burger__item">
+          <button class="button menu-burger__button menu-burger__button_active text_white">Регистрация</button>
+        </li>
+      </ul>
+
+    </div>
+  </section>
   <main>
     <!--Исправить растояние между хедером и секцией -->
     <section class="saved-articles">
@@ -183,14 +194,14 @@
 
       <p class="footer__text text text_gray">© 2020 Supersite, Powered by News API</p>
       <div class="footer__nav">
-        <div class="footer__list-text">
+        <ul class="footer__list-text">
           <li class="footer__item">
             <a href="../" class="footer__link">Главная</a>
           </li>
           <li class="footer__item">
             <a href="https://praktikum.yandex.ru" class="footer__link">Яндекс.Практикум</a>
           </li>
-        </div>
+        </ul>
         <ul class="footer__list-icon">
           <li class="footer__item">
             <a href="https://github.com" class="footer__link-icon" target="_blank"><img

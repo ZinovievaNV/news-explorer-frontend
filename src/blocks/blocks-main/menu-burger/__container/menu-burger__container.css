@@ -6,5 +6,5 @@
   font-style: normal;
   font-weight: 500;
   position: absolute;
-  width: -webkit-fill-available;
+  width: calc(100% - 32px);
 }

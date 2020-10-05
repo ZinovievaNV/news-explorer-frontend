@@ -1,5 +1,6 @@
+@import "_black/header__span_black.css";
 .header__span {
-  display: block;
+  /*display: block;*/
   width: 16px;
   height: 2px;
   margin-bottom: 4px;
@@ -10,9 +11,22 @@
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
   background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
   opacity 0.55s ease;
-  /*display: none;*/
+ display: none;
 }
-@media (max-width: 320px) {
+.header__span:first-of-type {
+  transform-origin: 0 0;
+}
+.header__span:nth-child(2){
+  transform-origin: 0 100%;
+}
+.header__span:first-of-type:checked {
+  opacity: 1;
+  transform: rotate(40deg) translate(-2px, -1px);
+}
+.header__span:last-of-type:checked {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+@media (max-width: 700px) {
   .header__span {
     display: block;
   }
