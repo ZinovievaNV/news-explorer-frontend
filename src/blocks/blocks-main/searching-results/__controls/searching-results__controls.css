@@ -1,0 +1,17 @@
+.searching-results__controls {
+padding-bottom: 80px;
+  width: fit-content;
+  display: flex;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .searching-results__controls {
+ padding-bottom: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .searching-results__controls {
+ margin-top: 15px;
+
+  }
+}

@@ -1,0 +1,9 @@
+@import "_inline/header__link_inline.css";
+
+.header__link {
+  cursor: pointer;
+  color: #1A1B22;
+  text-decoration: none;
+  list-style-type: none;
+}
+

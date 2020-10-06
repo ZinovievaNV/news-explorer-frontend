@@ -1,0 +1,9 @@
+.card__question.card__question_is_opened {
+  /*display: block;*/
+}
+
+@media (max-width: 900px) {
+  .card__question {
+    display: none;
+  }
+}

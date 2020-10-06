@@ -1,0 +1,9 @@
+.header__link_inline_black {
+ text-decoration: none;
+}
+
+.header__link_inline_black:hover {
+  border-bottom: 3px solid #1A1B22;
+  padding-bottom: 26px;
+}
+

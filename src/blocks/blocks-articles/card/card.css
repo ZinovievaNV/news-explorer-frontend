@@ -1,0 +1,34 @@
+@import url(__box/card__box.css);
+@import url(__delete-button/card__delete-button.css);
+@import url(__description/card__description.css);
+@import url(__type/card__type.css);
+@import url(__image/card__image.css);
+@import "__link/card__link.css";
+@import "__text/card__text.css";
+@import "__title/card__title.css";
+@import "__question/card__question.css";
+@import "question_is-opened/card__question_is-opened.css";
+@import "__container/card__container.css";
+@import "__controls/card__controls.css";
+@import "__save/card__save.css";
+@import "__link-control/card__link-control.css";
+@import "__ellipsis/card__ellipsis.css";
+@import "__more/card__more.css";
+
+.card {
+  background-color: #fff;
+  position: relative;
+  border-radius: 16px;
+  font-family: Roboto,Arial,sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 550px) {
+  .card {
+    margin-bottom: 10px;
+  }
+  .card:last-of-type{
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,7 @@
+.header__span_black {
+  display: none;
+}
+.header__span_black:active{
+  display: block;
+  background: #1A1B22;
+}

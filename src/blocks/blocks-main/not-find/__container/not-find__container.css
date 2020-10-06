@@ -1,0 +1,9 @@
+.not-find__container {
+  max-width: 356px;
+  align-items: center;
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}

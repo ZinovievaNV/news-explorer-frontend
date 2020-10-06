@@ -1,0 +1,10 @@
+.popup__user-error {
+  top: 20px;
+  left: 89px;
+}
+@media(max-width:320px) {
+ .popup__user-error {
+   top: 4px;
+   left: 55px;
+ }
+}

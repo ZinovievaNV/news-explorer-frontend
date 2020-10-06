@@ -1,0 +1,14 @@
+.card__link-control {
+  margin: auto 24px 24px;
+  width: fit-content;
+}
+@media (max-width: 768px) {
+  .card__link-control {
+    margin: auto 16px 16px;
+  }
+}
+@media (max-width: 320px) {
+  .card__link-control {
+    margin: auto 15px 17px;
+  }
+}

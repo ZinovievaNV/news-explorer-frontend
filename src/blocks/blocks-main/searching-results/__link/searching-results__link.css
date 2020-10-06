@@ -1,0 +1,25 @@
+.searching-results__link {
+  background: rgb(255,255,255);
+  border-radius: 80px;
+  padding: 18px 84px 22px;
+  font-family: Roboto,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125em;
+  line-height: 24px;
+  color: #1A1B22;
+  text-decoration: none;
+}
+.searching-results__link:hover{
+  background: rgba(255,255,255, 0.9);
+}
+@media (max-width: 900px) {
+  .searching-results__button {
+    padding: 15px 60px 22px;
+  }
+}
+@media (max-width: 320px) {
+  .searching-results__button {
+    width: 100%;
+  }
+}

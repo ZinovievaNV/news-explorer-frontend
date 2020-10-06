@@ -1,0 +1,7 @@
+.footer__list-icon {
+  display: flex;
+  width: 68px;
+  height: 24px;
+  justify-content: space-between;
+  align-items: baseline;
+}

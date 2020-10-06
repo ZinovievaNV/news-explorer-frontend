@@ -1,0 +1,14 @@
+@import "_text_white/header__title_text_white.css";
+
+.header__title {
+  font-family: Roboto Slab,Arial,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.250em;
+
+}
+@media (max-width: 320px) {
+  .header__title {
+    font-size: 1em;
+  }
+}

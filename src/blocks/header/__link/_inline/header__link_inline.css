@@ -1,0 +1,5 @@
+@import "_black/header__link_inline_black.css";
+@import "_white/header__link_inline_white.css";
+.header__link_inline {
+  text-decoration: none;
+}

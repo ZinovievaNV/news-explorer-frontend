@@ -1,0 +1,28 @@
+.search__input {
+  border-radius: 100px;
+  border: 1px solid #D1D2D6;
+  box-sizing: border-box;
+  backdrop-filter: blur(8px);
+  background: #FFFFFF;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 22px;
+  width: 100%;
+  padding: 0 24px;
+  height: 64px;
+}
+
+@media (max-width: 768px) {
+  .search__input {
+    height: 56px;
+  }
+}
+
+@media (max-width: 320px) {
+  .search__input {
+    display: block;
+    padding: 0 16px;
+
+  }
+}

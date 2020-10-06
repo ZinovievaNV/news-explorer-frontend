@@ -1,0 +1,14 @@
+.header__item {
+  list-style-type: none;
+  margin-right: 34px;
+}
+.header__item:last-of-type {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media  (max-width: 768px){
+  .header__item {
+    margin-right: 16px;
+  }
+}

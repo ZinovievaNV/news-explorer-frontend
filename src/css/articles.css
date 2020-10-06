@@ -1,0 +1,20 @@
+@import "../blocks/header/header.css";
+@import "../blocks/wrapper/wrapper.css";
+@import "../blocks/row/row.css";
+@import "./normalize.css";
+@import "./fonts.css";
+@import "../blocks/blocks-articles/articles/articles.css";
+@import "../blocks/blocks-articles/saved-articles/saved-articles.css";
+@import "../blocks/blocks-articles/card/card.css";
+@import "../blocks/blocks-articles/cards-list/cards-list.css";
+@import "../blocks/footer/footer.css";
+@import "../blocks/fill-gray/fill-gray.css";
+@import "../blocks/button/button.css";
+@import "../blocks/blocks-main/menu-burger/menu-burger.css";
+@import url(../blocks/text/text.css);
+
+
+.body {
+  background: #FFFFFF;
+  color: #1A1B22
+}

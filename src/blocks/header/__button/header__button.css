@@ -1,0 +1,22 @@
+@import "_white/header__button_white.css";
+@import "_black/header__button_black.css";
+@import "_active/header__button_active.css";
+
+.header__button {
+  box-sizing: border-box;
+  border-radius: 100px;
+  cursor: pointer;
+  padding: 12px 19px;;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background: white;*/
+  /*border: 1px solid #1A1B22;*/
+}
+
+@media (max-width: 768px) {
+  .header__button {
+   padding: 8px 12px;
+  }
+}
