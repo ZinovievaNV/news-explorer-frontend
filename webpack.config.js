@@ -29,7 +29,12 @@ module.exports = {
       {
         test: /\.css$/i,
         use: [
-          (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
+          (isDev ? 'style-loader' : {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../',
+            },
+          }),
           {
             loader: 'css-loader',
           },
@@ -51,11 +56,11 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'images/[name].[ext]',
-              publicPath: '/',
-              //useRelativePath: true,
-              esModule: false,
 
+              name: '[path][name].[ext]',
+              context: path.resolve(__dirname, "src/"),
+              useRelativePaths: true,
+              esModule: false,
             }
           },
           {
