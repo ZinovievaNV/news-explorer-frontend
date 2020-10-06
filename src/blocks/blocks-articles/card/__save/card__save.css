@@ -1,7 +1,7 @@
 @import "_show/card__save_show.css";
 
 .card__save {
-  background-image: url(../../../../images/bookmark-grey.png);
+  background-image: url('../../../../images/bookmark-grey.png');
   background-position: center;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
@@ -12,13 +12,13 @@
   cursor: pointer;
 }
 .card__save:hover {
-  background-image: url(../../../../images/bookmark-black.png);
+  background-image: url('../../../../images/bookmark-black.png');
   background-position: center;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
 }
 .card__save:active{
-  background-image: url(../../../../images/bookmark-blue.png);
+  background-image: url('../../../../images/bookmark-blue.png');
   background-position: center;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
