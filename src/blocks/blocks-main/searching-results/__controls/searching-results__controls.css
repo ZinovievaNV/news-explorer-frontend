@@ -12,6 +12,6 @@ padding-bottom: 80px;
 @media (max-width: 320px) {
   .searching-results__controls {
  margin-top: 15px;
-    margin-bottom: 32px;
+
   }
 }

@@ -52,7 +52,8 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: 'images/[name].[ext]',
-              useRelativePath: true,
+              publicPath: '/',
+              //useRelativePath: true,
               esModule: false,
 
             }

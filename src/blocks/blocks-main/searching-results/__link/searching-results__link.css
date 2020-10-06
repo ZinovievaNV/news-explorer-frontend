@@ -8,7 +8,6 @@
   font-size: 1.125em;
   line-height: 24px;
   color: #1A1B22;
-
   text-decoration: none;
 }
 .searching-results__link:hover{
@@ -16,7 +15,6 @@
 }
 @media (max-width: 900px) {
   .searching-results__button {
-
     padding: 15px 60px 22px;
   }
 }
