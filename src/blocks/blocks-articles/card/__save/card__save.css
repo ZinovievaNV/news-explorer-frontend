@@ -1,7 +1,9 @@
 @import "_show/card__save_show.css";
 
 .card__save {
-  background: url(../../../../images/bookmark-grey.png) center no-repeat;
+  background-image: url(../../../../images/bookmark-grey.png);
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #FFFFFF;
   border: none;
   width: 40px;
@@ -10,11 +12,15 @@
   cursor: pointer;
 }
 .card__save:hover {
-  background: url(../../../../images/bookmark-black.png) center no-repeat;;
+  background-image: url(../../../../images/bookmark-black.png);
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #FFFFFF;
 }
 .card__save:active{
-  background: url(../../../../images/bookmark-blue.png) center no-repeat;
+  background-image: url(../../../../images/bookmark-blue.png);
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #FFFFFF;
 }
 @media (max-width: 320px) {
