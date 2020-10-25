@@ -1,12 +1,13 @@
-@import "__title/search__title.css";
-@import "__button/search__button.css";
-@import "__container/search__container.css";
-@import "__text/search__text.css";
-@import "__error-show/search__error-show.css";
-@import "__error-message/search__error-message.css";
-@import "__form/search__form.css";
-@import "__input/search__input.css";
-@import "__box/search__box.css";
+@import '__title/search__title.css';
+@import '__button/search__button.css';
+@import '__container/search__container.css';
+@import '__text/search__text.css';
+@import '__error-show/search__error-show.css';
+@import '__error-message/search__error-message.css';
+@import '__form/search__form.css';
+@import '__input/search__input.css';
+@import '__box/search__box.css';
+
 
 .search {
   color: #FFFFFF;

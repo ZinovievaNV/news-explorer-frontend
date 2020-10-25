@@ -1,10 +1,17 @@
+@import "_position/popup__user-error_position.css";
 .popup__user-error {
-  top: 20px;
-  left: 89px;
+  top: -25px;
+  left: 44px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  position: absolute;
+  color: #FF0000;
+  z-index: 1;
 }
 @media(max-width:320px) {
  .popup__user-error {
-   top: 4px;
-   left: 55px;
+
  }
 }

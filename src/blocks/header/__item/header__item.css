@@ -1,7 +1,11 @@
+@import "_active/header__item_active.css";
+@import "_disabled/header__item_disabled.css";
+
 .header__item {
   list-style-type: none;
   margin-right: 34px;
 }
+
 .header__item:last-of-type {
   margin-left: 0;
   margin-right: 0;

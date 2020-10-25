@@ -15,10 +15,11 @@
 @import url(./__text/popup__text.css);
 @import url(./__container-button/popup__container-button.css);
 @import url(./__box-registration/popup__box-registration.css);
-@import "__link-control/popup__link-control.css";
-@import "__user-error/popup__user-error.css";
-@import "__background/popup__background.css";
-@import "__containers/popup__containers.css";
+@import url(__link-control/popup__link-control.css);
+@import url(__user-error/popup__user-error.css);
+@import url(__background/popup__background.css);
+@import url(__containers/popup__containers.css);
+
 
 
 .popup {
@@ -31,6 +32,7 @@
   align-items: center;
   justify-content: center;
   z-index: 10;
+  display: none;
 }
 
 

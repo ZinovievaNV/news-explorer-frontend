@@ -3,6 +3,7 @@ padding-bottom: 80px;
   width: fit-content;
   display: flex;
   margin: auto;
+  display: none;
 }
 @media (max-width: 768px) {
   .searching-results__controls {

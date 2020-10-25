@@ -32,7 +32,7 @@ module.exports = {
           (isDev ? 'style-loader' : {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: '../',
+              publicPath: '../',//указан путь для изображение к background
             },
           }),
           {

@@ -1,4 +1,4 @@
-@import "_show/card__save_show.css";
+@import '_show/card__save_show.css';
 
 .card__save {
   background-image: url(../../../../images/bookmark-grey.png);

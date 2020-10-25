@@ -1,8 +1,9 @@
-@import "__container/not-find__container.css";
-@import "__img/not-find__img.css";
-@import "__text/not-find__text.css";
-@import "__subtitle/not-find__subtitle.css";
-@import "../../text/text.css";
+@import '__container/not-find__container.css';
+@import '__img/not-find__img.css';
+@import '__text/not-find__text.css';
+@import '__subtitle/not-find__subtitle.css';
+@import '../../text/text.css';
+@import '_show/not-find_show.css';
 
 .not-find {
   background: #F5F6F7;
@@ -13,6 +14,6 @@
 
 @media (max-width: 768px) {
   .not-find {
-    display: none;
+
   }
 }

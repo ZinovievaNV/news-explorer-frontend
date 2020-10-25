@@ -1,4 +1,4 @@
-@import "_active/card__delete-button_active.css";
+@import '_active/card__delete-button_active.css';
 
 .card__delete-button {
   background-image: url(../../../../images/trash-grey.png);
