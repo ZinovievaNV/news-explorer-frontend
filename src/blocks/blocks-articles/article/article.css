@@ -1,5 +1,5 @@
-@import url(__box/card__box.css);
-@import url(__delete-button/card__delete-button.css);
+@import url(__box/article__box.css);
+@import url(__delete-button/article__delete-button.css);
 @import url(__description/card__description.css);
 @import url(__type/card__type.css);
 @import url(__image/card__image.css);
@@ -8,8 +8,8 @@
 @import url(__title/card__title.css);
 @import url(__question/card__question.css);
 @import url(question_is-opened/card__question_is-opened.css);
-@import url(__container/card__container.css);
-@import url(__controls/card__controls.css);
+@import url(__container/article__container.css);
+@import url(__controls/article__controls.css);
 @import url(__save/card__save.css);
 @import url(__link-control/card__link-control.css);
 @import url(__ellipsis/card__ellipsis.css);

@@ -1,4 +1,4 @@
-.card__container {
+.article__container {
   position: absolute;
   top: 24px;
   left: 24px;
@@ -7,13 +7,13 @@
   justify-content: space-between;
 }
 @media (max-width: 900px) {
-  .card__container {
+  .article__container {
    top: 8px;
     left: 10px;
   }
 }
 @media (max-width: 320px) {
-  .card__container {
+  .article__container {
     top: 16px;
     left: 16px;
   }

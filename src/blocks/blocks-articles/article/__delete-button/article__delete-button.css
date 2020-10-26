@@ -1,6 +1,6 @@
-@import '_active/card__delete-button_active.css';
+@import '_active/article__delete-button_active.css';
 
-.card__delete-button {
+.article__delete-button {
   background-image: url(../../../../images/trash-grey.png);
   background-position: center;
   background-repeat: no-repeat;
