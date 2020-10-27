@@ -1,8 +1,8 @@
-.card__ellipsis {
+.article__ellipsis {
   display: none;
 }
 @media (max-width: 768px) {
-  .card__ellipsis {
+  .article__ellipsis {
     display: flex;
   }
 }

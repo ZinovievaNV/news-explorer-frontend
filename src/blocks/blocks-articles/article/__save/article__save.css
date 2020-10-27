@@ -1,6 +1,6 @@
-@import '_show/card__save_show.css';
+@import '_show/article__save_show.css';
 
-.card__save {
+.article__save {
   background-image: url(../../../../images/bookmark-grey.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -11,20 +11,20 @@
   height: auto;
   cursor: pointer;
 }
-.card__save:hover {
+.article__save:hover {
   background-image: url(../../../../images/bookmark-black.png);
   background-position: center;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
 }
-.card__save:active{
+.article__save:active{
   background-image: url(../../../../images/bookmark-blue.png);
   background-position: center;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
 }
 @media (max-width: 320px) {
-  .card__save {
+  .article__save {
     display: flex;
 
   }

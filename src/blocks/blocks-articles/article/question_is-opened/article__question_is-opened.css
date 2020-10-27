@@ -1,9 +1,9 @@
-.card__question.card__question_is_opened {
+.article__question.article__question_is_opened {
   /*display: block;*/
 }
 
 @media (max-width: 900px) {
-  .card__question {
+  .article__question {
     display: none;
   }
 }

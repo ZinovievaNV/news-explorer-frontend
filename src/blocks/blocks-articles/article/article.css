@@ -1,21 +1,21 @@
 @import url(__box/article__box.css);
 @import url(__delete-button/article__delete-button.css);
-@import url(__description/card__description.css);
-@import url(__type/card__type.css);
-@import url(__image/card__image.css);
-@import url(__link/card__link.css);
-@import url(__text/card__text.css);
-@import url(__title/card__title.css);
-@import url(__question/card__question.css);
-@import url(question_is-opened/card__question_is-opened.css);
+@import url(__description/article__description.css);
+@import url(__type/article__type.css);
+@import url(__image/article__image.css);
+@import url(__link/article__link.css);
+@import url(__text/article__text.css);
+@import url(__title/article__title.css);
+@import url(__question/article__question.css);
+@import url(question_is-opened/article__question_is-opened.css);
 @import url(__container/article__container.css);
 @import url(__controls/article__controls.css);
-@import url(__save/card__save.css);
-@import url(__link-control/card__link-control.css);
-@import url(__ellipsis/card__ellipsis.css);
-@import url(__more/card__more.css);
+@import url(__save/article__save.css);
+@import url(__link-control/article__link-control.css);
+@import url(__ellipsis/article__ellipsis.css);
+@import url(__more/article__more.css);
 
-.card {
+.article {
   background-color: #fff;
   position: relative;
   border-radius: 16px;
@@ -25,10 +25,10 @@
 }
 
 @media (max-width: 550px) {
-  .card {
+  .article {
     margin-bottom: 10px;
   }
-  .card:last-of-type{
+  .article:last-of-type{
     margin-bottom: 0;
   }
 }

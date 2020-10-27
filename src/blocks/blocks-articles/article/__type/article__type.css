@@ -1,4 +1,4 @@
-.card__type {
+.article__type {
   margin: 0;
   font-style: normal;
   font-weight: normal;
@@ -13,6 +13,6 @@
 }
 
 @media (max-width: 320px) {
-  .card__type {
+  .article__type {
   }
 }

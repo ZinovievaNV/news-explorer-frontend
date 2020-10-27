@@ -6,14 +6,24 @@ export default class Search {
     this.cards = []; //объект с карточками от результата запроса
     this.resultSearch = document.querySelector('.searching-results');
     this.sectionNotFind = document.querySelector('.not-find');
-    this.cardsContainer = document.querySelector('.articles-list') //todo контейнер карточек в верстке
+    this.linkSave = document.querySelector('.article__save');
+    this.cardsContainer = document.querySelector('.articles-list');//todo контейнер карточек в верстке
     //this.buttonShowMore = document.querySelector('.searching-results__controls');
   }
 
   setEventListeners() {
+
     // this.resultSearch.querySelector('.searching-results__controls').addEventListener('click', this.renderingCards.bind(this));
     this.form.addEventListener('submit', this.processSubmit.bind(this));
+    if (this.linkSave) {
+      this.linkSave.addEventListener('mouseover', this.hoverOnLinkSave.bind(this));
 
+    }
+
+  }
+
+  hoverOnLinkSave() {
+    console.log('навели мышку')
   }
 
 //валидация поля поиска
@@ -33,7 +43,7 @@ export default class Search {
 
 //ответ с сайта
   processResponse(data) {
-    this.hiddenPreloader();
+    this.hidePreloader();
 
 
     if
@@ -50,11 +60,6 @@ export default class Search {
       this.renderingErrorResult();
 
     }
-
-  }
-
-  getObject(object) {
-
 
   }
 
@@ -104,15 +109,14 @@ export default class Search {
   }
 
   renderCard(card) {
+    console.log(card);
     const article = document.createElement('article');
     const articleImage = document.createElement('img');
     const articleContainer = document.createElement('div');
     const articleType = document.createElement('div');
     const articleLinkSaved = document.createElement('a');
-
-    articleLinkSaved.setAttribute('src', card.urlToImage);
     const articleDescription = document.createElement('div');
-    const articleData = document.createElement('p');
+    const articleDate = document.createElement('p');
     const articleTitle = document.createElement('h2');
     const articleText = document.createElement('p');
     const articleLinkControl = document.createElement('div');
@@ -121,39 +125,40 @@ export default class Search {
     article.classList.add('article');
     articleImage.classList.add('article__image');
     articleContainer.classList.add('article__container');
-    articleType.classList.add('rticle__type');
-    article.textContent = card.keyword;
+    articleType.classList.add('article__type');
     articleLinkSaved.classList.add('article__save');
     articleDescription.classList.add('article__description');
-    //articleData.classList.add('article__data')
-    articleData.classList.add.apply(
-      articleData.classList,
+    articleDate.classList.add.apply(
+      articleDate.classList,
       ['article__data', 'text', 'text_gray']
     );
-    articleData.textContent =
-    articleTitle.classList.add('article__title');
-    articleText.classList.add('article__text');
-    articleLinkControl.classList.add('article__link-control');
     articleLink.classList.add.apply(
       articleLink.classList,
       ['article__link', 'text', 'text_gray']
     );
+    articleTitle.classList.add('article__title');
+    articleText.classList.add('article__text');
+    articleLinkControl.classList.add('article__link-control');
+
+
+    articleType.textContent = card.source.name;
+    articleTitle.textContent = card.title;
+    articleDate.textContent =card.publishedAt;
+    articleText.textContent = card.description;
+    articleImage.setAttribute('src', card.urlToImage);
 
     article.appendChild(articleImage);
     article.appendChild(articleContainer);
     articleContainer.appendChild(articleType);
     articleContainer.appendChild(articleLinkSaved);
     article.appendChild(articleDescription);
-    articleDescription.appendChild(articleData);
+    articleDescription.appendChild(articleDate);
     articleDescription.appendChild(articleTitle);
     articleDescription.appendChild(articleText);
     article.appendChild(articleLinkControl);
     articleLinkControl.appendChild(articleLink);
 
-    this.cardElement = article;
-    return article;
-
-    //todo реализовать формирование карточки и вывод ее в this.cardsContainer, в card объект карточки
+    this.cardsContainer.appendChild(article);
   }
 
 //Показ ошибки если пустое поле

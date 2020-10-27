@@ -1,8 +1,8 @@
-.card__more {
+.article__more {
 
 }
 @media (max-width: 768px) {
-  .card__more {
+  .article__more {
     display: none;
   }
 }

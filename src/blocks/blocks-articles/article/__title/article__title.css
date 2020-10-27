@@ -1,4 +1,4 @@
-.card__title {
+.article__title {
   margin-top: 12px;
   margin-bottom: 16px;
   font-family: Roboto Slab,Arial,sans-serif;
@@ -9,7 +9,7 @@
 }
 
 @media  (max-width: 900px){
-  .card__title {
+  .article__title {
     font-size: 1.375em;
     line-height: 24px;
     margin-bottom: 10px;
@@ -17,7 +17,7 @@
   }
 }
 @media (max-width: 320px) {
-  .card__title {
+  .article__title {
     line-height: 26px;
     margin-top: 10px;
 

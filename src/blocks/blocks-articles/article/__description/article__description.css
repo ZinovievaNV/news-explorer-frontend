@@ -1,4 +1,4 @@
-.card__description {
+.article__description {
   position: relative;
   min-height: 78px;
   align-items: center;
@@ -7,14 +7,14 @@
   padding: 20px 24px 10px;
 }
 @media (max-width: 768px) {
-  .card__description {
+  .article__description {
     padding: 16px 16px 8px
   }
 
 }
 
 @media (max-width: 320px) {
-  .card__description {
+  .article__description {
     padding: 16px 16px 8px
   }
 

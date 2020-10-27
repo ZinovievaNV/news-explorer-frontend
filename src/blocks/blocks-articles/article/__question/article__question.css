@@ -1,4 +1,4 @@
-.card__question {
+.article__question {
   font-family: Roboto,Arial,sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -16,7 +16,7 @@
   display: none;
 }
 @media (max-width: 900px) {
-  .card__question {
+  .article__question {
     display: none;
   }
 }
