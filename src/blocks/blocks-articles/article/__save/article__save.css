@@ -1,0 +1,32 @@
+@import '_show/article__save_show.css';
+
+.article__save {
+  background-image: url(../../../../images/bookmark-grey.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  border: none;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.article__save:hover {
+ /*background-image: url(../../../../images/bookmark-black.png);*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+}
+.article__save.article__save_active{
+  background-image: url(../../../../images/bookmark-blue.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+}
+@media (max-width: 320px) {
+  .article__save {
+    display: flex;
+
+  }
+}

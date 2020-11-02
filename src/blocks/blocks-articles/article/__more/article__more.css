@@ -1,0 +1,8 @@
+.article__more {
+
+}
+@media (max-width: 768px) {
+  .article__more {
+    display: none;
+  }
+}

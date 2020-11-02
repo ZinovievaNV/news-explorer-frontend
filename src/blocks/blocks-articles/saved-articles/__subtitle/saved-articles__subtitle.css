@@ -1,0 +1,18 @@
+.saved-articles__subtitle {
+  color: rgba(26, 27, 34, 0.5);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125em;
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  .saved-articles__subtitle {
+    font-size: 0.875em;
+  }
+}
+
+@media (max-width: 320px) {
+  .saved-articles__subtitle {
+    font-size: 0.750em;
+  }
+}

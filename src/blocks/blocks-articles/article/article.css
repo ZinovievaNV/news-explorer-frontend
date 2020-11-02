@@ -1,0 +1,36 @@
+@import url(__box/article__box.css);
+@import url(__delete-button/article__delete-button.css);
+@import url(__description/article__description.css);
+@import url(__type/article__type.css);
+@import url(__image/article__image.css);
+@import url(__link/article__link.css);
+@import url(__text/article__text.css);
+@import url(__title/article__title.css);
+@import url(__question/article__question_show.css);
+@import url(__question/_show/article__question_show.css);
+@import url(__container/article__container.css);
+@import url(__controls/article__controls.css);
+@import url(__save/article__save.css);
+@import url(__save-container/article__save-container.css);
+@import url(__auth-message/article__auth-message.css);
+@import url(__link-control/article__link-control.css);
+@import url(__ellipsis/article__ellipsis.css);
+@import url(__more/article__more.css);
+
+.article {
+  background-color: #fff;
+  position: relative;
+  border-radius: 16px;
+  font-family: Roboto,Arial,sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 550px) {
+  .article {
+    margin-bottom: 10px;
+  }
+  .article:last-of-type{
+    margin-bottom: 0;
+  }
+}

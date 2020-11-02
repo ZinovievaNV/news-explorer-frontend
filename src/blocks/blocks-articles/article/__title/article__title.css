@@ -1,0 +1,26 @@
+.article__title {
+  font-family: Roboto Slab,Arial,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  font-size: 1.625em;
+  line-height: 30px;
+  color: #1A1B22;
+  margin-top: 12px;
+}
+
+@media  (max-width: 900px){
+  .article__title {
+    font-size: 1.375em;
+    line-height: 24px;
+    margin-bottom: 10px;
+
+  }
+}
+@media (max-width: 320px) {
+  .article__title {
+    line-height: 26px;
+    margin-top: 10px;
+
+  }
+}

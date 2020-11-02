@@ -1,0 +1,15 @@
+@import "__img/preloader__img.css";
+@import "__container/preloader__container.css";
+@import "../../text/text.css";
+@import "__text/preloader__text.css";
+
+.preloader {
+  background: #F5F6F7;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .preloader {
+    display: none;
+  }
+}

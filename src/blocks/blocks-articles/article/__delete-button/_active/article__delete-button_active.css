@@ -1,0 +1,9 @@
+.article__delete-button_active {
+  background-color: #FFFFFF;
+}
+.article__delete-button_active:active {
+  background-image: url(../../../../../images/trash.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+}

@@ -1,0 +1,11 @@
+@import "__title/about-author__title.css";
+@import "__text/about-author__text.css";
+@import "__container/about-author__container.css";
+@import "__img/about-author__img.css";
+@import "__info/about-author__info.css";
+
+.about-author {
+  color: #1A1B22;
+  font-family: Roboto,Arial,sans-serif;
+  background-color: #FFFFFF;
+}

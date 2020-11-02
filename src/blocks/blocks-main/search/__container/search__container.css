@@ -1,0 +1,19 @@
+.search__container {
+  display: flex;
+  position: relative;
+  margin-top: 64px;
+}
+
+@media (max-width: 768px) {
+  .search__container {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 700px) {
+  .search__container {
+    margin-top: 122px;
+    display: inline-block;
+    width: 100%;
+  }
+}

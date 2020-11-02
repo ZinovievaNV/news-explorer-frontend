@@ -1,0 +1,14 @@
+@import "_inline/header__link_inline.css";
+
+.header__link {
+  cursor: pointer;
+  color: #1A1B22;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Roboto,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125em;
+  line-height: 24px;
+}
+

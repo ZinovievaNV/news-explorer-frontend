@@ -1,0 +1,18 @@
+@import '_close/header__hamburger_close.css';
+
+.header__hamburger {
+  display: none;
+
+}
+
+@media (max-width: 700px) {
+  .header__hamburger {
+    display: block;
+    background-image: url('../../../images/menu-min-white.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+}
+

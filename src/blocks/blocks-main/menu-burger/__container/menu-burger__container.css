@@ -1,0 +1,10 @@
+.menu-burger__container {
+  padding: 16px 16px 24px;
+  background: #1A1B22;
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+  width: calc(100% - 32px);
+}

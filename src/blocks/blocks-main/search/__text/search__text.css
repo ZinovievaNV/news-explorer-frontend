@@ -1,0 +1,13 @@
+.search__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125em;
+  line-height: 24px;
+  margin-top: 32px;
+}
+@media  (max-width: 768px){
+  .search__text{
+    margin-top: 16px;
+
+  }
+}

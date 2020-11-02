@@ -1,0 +1,20 @@
+@import '__link/menu-burger__link.css';
+@import '__container/menu-burger__container.css';
+@import '__button/menu-burger__button.css';
+@import '__background/menu-burger__background.css';
+@import '__list/menu-burger__list.css';
+@import '__item/menu-burger__item.css';
+@import '_show/menu__burger_show.css';
+@import '__icon/menu-burger__icon.css';
+
+.menu-burger {
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+/**todo настроить */
+@media (max-width: 700px) {
+  .menu-burger {
+
+  }
+}

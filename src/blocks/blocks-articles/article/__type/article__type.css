@@ -1,0 +1,19 @@
+.article__type {
+  font-family: Roboto,Arial,sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+  font-size: 0.875em;
+  background: #FFFFFF;
+  border-radius: 10px;
+  text-align: center;
+  width: fit-content;
+  /*height: 100%;*/
+  padding: 8px 12px;
+}
+
+@media (max-width: 320px) {
+  .article__type {
+  }
+}

@@ -1,0 +1,21 @@
+.search__box {
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 608px;
+}
+@media  (max-width: 768px){
+  .search__box {
+    max-width: 452px;
+    padding-top: 38px;
+    padding-bottom: 48px;
+  }
+}
+
+@media  (max-width: 700px){
+  .search__box {
+    max-width: 285px;
+    padding-top: 30px;
+    padding-bottom: 32px;
+  }
+}

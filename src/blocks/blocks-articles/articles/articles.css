@@ -1,0 +1,11 @@
+.articles {
+
+}
+
+@media  (max-width: 768px){
+  .header__button {
+    max-width: 224px;
+    max-height: 420px;
+
+  }
+}

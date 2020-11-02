@@ -1,0 +1,7 @@
+.wrapper__img {
+  background-image: url(../../../images/foto-website.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}

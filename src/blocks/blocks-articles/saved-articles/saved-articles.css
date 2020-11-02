@@ -1,0 +1,12 @@
+@import "__title/saved-articles__title.css";
+@import "__subtitle/saved-articles__subtitle.css";
+@import "__text/saved-articles__text.css";
+@import "__word/saved-articles__word.css";
+@import "__name/saved-articles__name.css";
+@import "__container/saved-articles__container.css";
+@import "__counter/saved-articles__counter.css";
+
+.saved-articles {
+  font-family: Roboto,Arial,sans-serif;
+}
+

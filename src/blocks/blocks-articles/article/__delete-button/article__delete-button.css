@@ -1,0 +1,17 @@
+@import '_active/article__delete-button_active.css';
+
+.article__delete-button {
+  background-image: url(../../../../images/trash-grey.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  border: none;
+  max-width: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 40px;
+}
+
+.article__delete-button:hover {
+  background-image: url(../../../../images/trash.png);
+}

@@ -1,0 +1,8 @@
+.article__ellipsis {
+  display: none;
+}
+@media (max-width: 768px) {
+  .article__ellipsis {
+    display: flex;
+  }
+}
