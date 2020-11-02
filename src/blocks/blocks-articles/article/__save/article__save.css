@@ -6,18 +6,19 @@
   background-repeat: no-repeat;
   background-color: #FFFFFF;
   border: none;
+  display: inline-block;
   width: 40px;
+  height: 40px;
   border-radius: 8px;
-  height: auto;
   cursor: pointer;
 }
 .article__save:hover {
-  background-image: url(../../../../images/bookmark-black.png);
+ /*background-image: url(../../../../images/bookmark-black.png);*/
   background-position: center;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
 }
-.article__save:active{
+.article__save.article__save_active{
   background-image: url(../../../../images/bookmark-blue.png);
   background-position: center;
   background-repeat: no-repeat;

@@ -8,137 +8,141 @@
   <meta name="author" content="Зиновьева Наталья">
   <title>Сохранённые статьи</title>
   <link rel="icon" href="<%=require('../images/favicon.png')%>" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="<%=htmlWebpackPlugin.files.css.filter(css => css.match(/articles.*.css$/i)) %>">
+  <link rel="stylesheet" type="text/css"
+        href="<%=htmlWebpackPlugin.files.css.filter(css => css.match(/saved\-articles.*.css$/i)) %>">
 </head>
 <body class="body">
 <div class="wrapper">
   <header class="header">
     <div class="header__row">
-      <h2 class="header__title header_white">NewsExplorer</h2>
+      <h2 class="header__title">NewsExplorer</h2>
       <nav class="header__nav">
-        <ul class="header__list">
+        <ul class="header__nav">
           <li class="header__item">
-            <a href="./" class="header__link header__link_inline_black header__link_inline">Главная</a>
+            <a href="/"
+               class="header__link header__link_inline">Главная</a>
           </li>
           <li class="header__item">
-            <a href="../" class="header__link header__link_inline_black header__link_inline">Сохранённые статьи</a>
+            <a class="button header__button js-authorisation-link">
+              Авторизация
+            </a>
           </li>
-          <li class="header__item">
-            <button class="button header__button header__button_black"><span class="header__name">Грета</span><img
-              src="<%=require('../images/logout-black.png')%>" alt="иконка входа" class="header__icon">
-            </button>
+          <li class="header__item list_item_disabled" id="saved-articles-link">
+            <a href="articles.html" class="header__link header__link_inline js-authorised-link">
+              Сохранённые статьи
+            </a>
+          </li>
+          <li class="header__item list_item_disabled">
+            <a class="button header__button js-logout-link js-authorised-link">
+              <span class="js-user-name"></span>
+              <img class="header__icon logout-icon" src="<%=require('../images/logout-white.png')%>"
+                   alt="иконка выхода">
+            </a>
           </li>
         </ul>
       </nav>
-      <img src="<%=require('../images/menu-min-black.png')%>" alt="меню бургер" class="header__gamburger">
+      <a href="#" id="js-open-hamburger-menu" class="header__hamburger">
+      </a>
+
     </div>
+    <!--MENU-BURGER-->
+    <section class="menu-burger">
+      <div class="menu-burger__background"></div>
+      <div class="menu-burger__container">
+        <ul class="menu-burger__list">
+          <li class="menu-burger__item"><a class="menu-burger__link text_white" href="/">Главная</a></li>
+          <li class="menu-burger__item list_item_disabled"><a class="menu-burger__link text_white js-authorised-link"
+                                                              href="articles.html">Сохранённые статьи</a></li>
+          <li class="menu-burger__item list_item_disabled">
+            <a class="button menu-burger__button menu-burger__button_white js-logout-link js-authorised-link">
+              <span class="js-user-name text_white"></span>
+              <img class="menu-burger__icon logout-icon" src="<%=require('../images/logout-white.png')%>"
+                   alt="иконка выхода">
+            </a>
+          </li>
+          <li class="menu-burger__item">
+            <a class="button menu-burger__button menu-burger__button_active text_white js-authorisation-link">
+              Авторизоваться
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </header>
   <section class="menu-burger">
     <div class="menu-burger__background"></div>
     <div class="menu-burger__container">
       <ul class="menu-burger__list">
-        <li class="menu-burger__item"><a class="menu-burger__link text_white" href="#">Главная</a></li>
-        <li><a class="menu-burger__link text_white" href="#">Сохранённые статьи</a></li>
+        <li class="menu-burger__item"><a class="menu-burger__link text_black" href="/">Главная</a></li>
+        <li class="menu-burger__item"><a class="menu-burger__link text_black" href="/articles.html">Сохранённые
+          статьи</a></li>
         <li class="menu-burger__item">
-          <button class="button menu-burger__button menu-burger__button_active text_white">Регистрация</button>
+          <a class="button header__button header__button_black js-logout-link js-authorised-link">
+            <span class="js-user-name text_black"></span>
+            <img class="header__icon_show logout-icon" src="<%=require('../images/logout-black.png')%>"
+                 alt="иконка выхода">
+          </a>
         </li>
       </ul>
     </div>
   </section>
   <main>
+    <template id="card">
+      <article class="article">
+        <div class="article__box">
+          <img class="article__image js-card-image" alt="" src="">
+        </div>
+        <div class="article__container">
+          <div>
+            <div class="article__type js-card-keyword"></div>
+          </div>
+          <div class="article__save-container js-card-save-container">
+          </div>
+        </div>
+        <div class="article__description">
+          <p class="article__data text text_gray js-card-date"></p>
+          <a href="" class="js-card-link" target="_blank"><h2 class="article__title js-card-title"></h2></a>
+          <p class="article__text js-card-text"></p>
+        </div>
+        <div class="article__link-control">
+          <a href="#" class="article__link text text_gray js-card-source">ДЗЕН</a>
+        </div>
+      </article>
+    </template>
     <section class="saved-articles">
       <div class="saved-articles__container">
         <h2 class="saved-articles__subtitle">Сохранённые статьи</h2>
-        <!--saved-articles__name,saved-article__counter. Будет реализован счетчик и имя авторизованого-->
-        <h1 class="saved-articles__title"><span class="saved-articles__name">Грета</span>, у вас <span
-          class="saved-article__counter">5</span><br>сохранённых статей
+        <h1 class="saved-articles__title">
+          <span class="js-user-name"></span>, у вас <span class="js-article-count saved-article__counter"></span><br>сохранённых
+          статей
         </h1>
-        <!--saved-articles__word Будет реализованы слова из поиска-->
         <p class="saved-articles__text">По ключевым словам: <span
-          class="saved-articles__word">Природа,Тайга и 2 другим</span></p>
+          class="saved-articles__word js-keywords"></span></p>
       </div>
     </section>
     <section class="articles fill-gray">
-      <div class="cards-list">
+      <div class="articles-list">
         <!--Первая карточка-->
-        <article class="card">
-          <img class="card__image" alt="фото статьи" src="<%=require('../images/image_06-min.jpg')%>">
-          <div class="card__container">
-            <p class="card__type">Природа</p>
-            <div class="card__controls">
-              <a href="#" class="card__question card__question_is_opened">Убрать из сохраннёных</a>
-              <a href="#" class="card__delete-button card__delete-button_active">
-              </a>
-            </div>
-          </div>
-          <div class="card__description">
-            <p class="card__data text text_gray">2 августа,2019</p>
-            <h2 class="card__title">Национальное достояние – парки</h2>
-            <p class="card__text">В 2016 году Америка отмечала важный юбилей:
-              сто лет назад здесь начала складываться система национальных парков – охраняемых территорий,
-            </p>
-          </div>
-          <div class="card__link-control"><a href="#" class="card__link text text_gray">ДЗЕН</a></div>
-        </article>
-        <!--Вторая карточка-->
-        <article class="card">
-          <img class="card__image" alt="фото статьи" src="<%=require('../images/image_06-min.jpg')%>">
-          <div class="card__container">
-            <div class="card__type">Природа</div>
-            <div class="card__controls">
-              <a href="#" class="card__question card__question_is_opened">Убрать из сохраннёных</a>
-              <a href="#" class="card__delete-button card__delete-button_active">
-              </a>
-            </div>
-          </div>
-          <div class="card__description">
-            <p class="card__data text text_gray">2 августа,2019</p>
-            <h2 class="card__title">Национальное достояние – парки</h2>
-            <p class="card__text">В 2016 году Америка отмечала важный юбилей:
-              сто лет назад здесь начала складываться система национальных парков – охраняемых территорий,
-            </p>
-          </div>
-          <div class="card__link-control"><a href="#" class="card__link text text_gray">ДЗЕН</a></div>
-        </article>
-        <!--Третья карточка-->
-        <article class="card">
-          <img class="card__image" alt="фото статьи" src="<%=require('../images/image_01-min.jpg')%>">
-          <div class="card__container">
-            <div class="card__type">Природа</div>
-            <div class="card__controls">
-              <a href="#" class="card__question card__question_is_opened">Убрать из сохраннёных</a>
-              <a href="#" class="card__delete-button card__delete-button_active"></a>
-            </div>
-          </div>
-          <div class="card__description">
-            <p class="card__data text text_gray">2 августа,2019</p>
-            <h2 class="card__title">Лесные огоньки: история одной фотографии</h2>
-            <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
-              запечатлеть ускользающую красоту одного
-              из местных чудес природы.</p>
-          </div>
-          <div class="card__link-control"><a href="#" class="card__link text text_gray">Афиша</a></div>
-        </article>
-        <!--Четвертая карточка-->
-        <article class="card">
-          <div class="card__box">
-            <img class="card__image" alt="фото статьи" src="<%=require('../images/image_05-min.jpg')%>">
-            <div class="card__container">
-              <div class="card__type">Тайга</div>
-              <div class="card__controls">
-                <a href="#" class="card__question card__question_is_opened">Убрать из сохраннёных</a>
-                <a href="#" class="card__delete-button card__delete-button_active"></a>
-              </div>
-            </div>
-            <div class="card__description">
-              <p class="card__data text text_gray">2 августа,2019</p>
-              <h2 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
-              <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
-                необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-            </div>
-            <div class="card__link-control"><a href="#" class="card__link text text_gray">Медиазона</a></div>
-          </div>
-        </article>
+        <!--        <article class="card">-->
+        <!--          <img class="card__image" alt="фото статьи" src="<%=require('../images/image_06-min.jpg')%>">-->
+        <!--          <div class="card__container">-->
+        <!--            <p class="card__type">Природа</p>-->
+        <!--            <div class="card__controls">-->
+        <!--              <a href="#" class="card__question card__question_is_opened">Убрать из сохраннёных</a>-->
+        <!--              <a href="#" class="card__delete-button card__delete-button_active">-->
+        <!--              </a>-->
+        <!--            </div>-->
+        <!--          </div>-->
+        <!--          <div class="card__description">-->
+        <!--            <p class="card__data text text_gray">2 августа,2019</p>-->
+        <!--            <h2 class="card__title">Национальное достояние – парки</h2>-->
+        <!--            <p class="card__text">В 2016 году Америка отмечала важный юбилей:-->
+        <!--              сто лет назад здесь начала складываться система национальных парков – охраняемых территорий,-->
+        <!--            </p>-->
+        <!--          </div>-->
+        <!--          <div class="card__link-control"><a href="#" class="card__link text text_gray">ДЗЕН</a></div>-->
+        <!--        </article>-->
+        <!--     -->
       </div>
     </section>
   </main>
@@ -169,6 +173,6 @@
     </div>
   </footer>
 </div>
-<script type="module" src="<%= htmlWebpackPlugin.files.js.filter(js => js.match(/articles.*.js/i)) %>"></script>
+<script type="module" src="<%= htmlWebpackPlugin.files.js.filter(js => js.match(/saved\-articles.*.js/i)) %>"></script>
 </body>
 </html>

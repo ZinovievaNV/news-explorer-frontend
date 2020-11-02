@@ -11,3 +11,7 @@
   cursor: pointer;
   width: 40px;
 }
+
+.article__delete-button:hover {
+  background-image: url(../../../../images/trash.png);
+}

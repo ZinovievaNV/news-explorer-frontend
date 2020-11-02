@@ -1,0 +1,9 @@
+.article__question.article__question_show {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .article__question {
+    display: none;
+  }
+}

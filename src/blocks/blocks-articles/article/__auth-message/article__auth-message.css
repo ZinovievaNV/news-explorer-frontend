@@ -1,19 +1,17 @@
-.article__type {
+@import "_show/article__auth-message_show.css";
+
+.article__auth-message{
   font-family: Roboto,Arial,sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   margin: 0;
-  font-size: 0.875em;
+  font-size: 0.5em;
   background: #FFFFFF;
   border-radius: 10px;
   text-align: center;
   width: fit-content;
-  /*height: 100%;*/
-  padding: 8px 12px;
-}
-
-@media (max-width: 320px) {
-  .article__type {
-  }
+  padding: 7px 12px;
+  margin-right: 5px;
+  display: none;
 }

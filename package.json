@@ -1,6 +1,6 @@
 {
   "name": "diplom-webpack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Дипломный проект на тему 'webpack' и 'frontend' в Яндекс.Практикуме.По проекту NewsExplorer",
   "main": "./src/js/index.js",
   "scripts": {
@@ -27,11 +27,13 @@
   "devDependencies": {
     "@babel/cli": "7.8.4",
     "@babel/core": "7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-private-methods": "^7.12.1",
     "@babel/preset-env": "7.9.6",
     "autoprefixer": "9.8.0",
     "babel-loader": "8.1.0",
     "copy-webpack-plugin": "6.0.1",
-    "core-js": "3.4.1^",
+    "core-js": "^3.4.1",
     "cross-env": "7.0.2",
     "css-loader": "3.5.3",
     "cssnano": "4.1.10",

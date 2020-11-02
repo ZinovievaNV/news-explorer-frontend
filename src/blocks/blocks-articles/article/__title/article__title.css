@@ -1,11 +1,12 @@
 .article__title {
-  margin-top: 12px;
-  margin-bottom: 16px;
   font-family: Roboto Slab,Arial,sans-serif;
   font-style: normal;
   font-weight: normal;
+  list-style-type: none;
   font-size: 1.625em;
   line-height: 30px;
+  color: #1A1B22;
+  margin-top: 12px;
 }
 
 @media  (max-width: 900px){

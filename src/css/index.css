@@ -15,8 +15,3 @@
 @import url(../blocks/button/button.css);
 @import url(../blocks/blocks-main/menu-burger/menu-burger.css);
 
-/** @todo Переделать */
-.list_item_disabled {
-  display: none;
-}
-

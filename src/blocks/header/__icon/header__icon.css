@@ -1,6 +1,6 @@
+@import "_show/header__icon_show.css";
 .header__icon {
   width: 24px;
   height: 24px;
   display: none;
-
 }

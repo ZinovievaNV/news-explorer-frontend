@@ -2,7 +2,7 @@
 @import '__subtitle/searching-results__subtitle.css';
 @import '__link/searching-results__link.css';
 @import '../../blocks-articles/articles/articles.css';
-@import '../../blocks-articles/cards-list/cards-list.css';
+@import '../../blocks-articles/articles-list/articles-list.css';
 @import '../../fill-gray/fill-gray.css';
 @import '../../blocks-articles/article/article.css';
 @import '__controls/searching-results__controls.css';
